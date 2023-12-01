@@ -10,7 +10,7 @@ export default function App() {
   const [name, setName] = useState('')
 
   async function getSavedFriends() {
-    axios.get(/api/friends)
+    axios.get('/api/friends')
     .then(res => {
         setFriends(res.data.results)
     })
